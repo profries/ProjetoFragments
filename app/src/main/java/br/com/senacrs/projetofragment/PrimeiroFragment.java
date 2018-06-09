@@ -17,7 +17,7 @@ public class PrimeiroFragment extends Fragment{
     Comunicador comunicador;
 
     public void onAttach(Context contexto) {
-        super.onAttach(contexto);
+            super.onAttach(contexto);
 
         Activity activity = null;
 
