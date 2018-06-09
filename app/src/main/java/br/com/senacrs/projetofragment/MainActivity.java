@@ -6,6 +6,7 @@ import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity implements Comunicador{
 
@@ -45,9 +46,10 @@ public class MainActivity extends AppCompatActivity implements Comunicador{
 
     }
 
-
+    
     @Override
     public void enviaMensagem(String msg) {
-        this.mensagem = mensagem;
+        this.mensagem = msg;
+        Toast.makeText(this, "Mensagem: "+mensagem, Toast.LENGTH_SHORT).show();
     }
 }
